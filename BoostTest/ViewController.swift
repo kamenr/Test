@@ -8,11 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UITableViewController {
+    let service = Services()
     override func viewDidLoad() {
+        let contactData = service.loadData()
         super.viewDidLoad()
-        // test
+       
         // Do any additional setup after loading the view.
     }
 
