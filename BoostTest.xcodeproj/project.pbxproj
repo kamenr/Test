@@ -17,6 +17,9 @@
 		EB2E6D66232F835000D1CD8F /* ContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2E6D65232F835000D1CD8F /* ContactViewModel.swift */; };
 		EB2E6D6A232FB6C000D1CD8F /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2E6D69232FB6C000D1CD8F /* SwiftyJSON.swift */; };
 		EB2E6D6B232FC29C00D1CD8F /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = EBF817DD232A72060049CBED /* data.json */; };
+		EB2E6D6E23311F2D00D1CD8F /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2E6D6D23311F2D00D1CD8F /* Observable.swift */; };
+		EB2E6D702331273D00D1CD8F /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2E6D6F2331273D00D1CD8F /* ContactCell.swift */; };
+		EB2E6D72233134E000D1CD8F /* DynamicValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2E6D71233134E000D1CD8F /* DynamicValue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,9 @@
 		EB2E6D63232F7A7E00D1CD8F /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
 		EB2E6D65232F835000D1CD8F /* ContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewModel.swift; sourceTree = "<group>"; };
 		EB2E6D69232FB6C000D1CD8F /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = "../../Downloads/SwiftyJSON-master/Source/SwiftyJSON/SwiftyJSON.swift"; sourceTree = "<group>"; };
+		EB2E6D6D23311F2D00D1CD8F /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		EB2E6D6F2331273D00D1CD8F /* ContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
+		EB2E6D71233134E000D1CD8F /* DynamicValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DynamicValue.swift; path = BoostTest/DynamicValue.swift; sourceTree = SOURCE_ROOT; };
 		EBF817DD232A72060049CBED /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +87,7 @@
 		EB2CE656232A6E29002A9A2C = {
 			isa = PBXGroup;
 			children = (
+				EB2E6D6C23311F2000D1CD8F /* Helper */,
 				EB2E6D62232F7A6D00D1CD8F /* Services */,
 				EBF817DF232A72170049CBED /* ViewModel */,
 				EBF817DE232A72110049CBED /* View */,
@@ -105,7 +112,6 @@
 			isa = PBXGroup;
 			children = (
 				EB2CE662232A6E2A002A9A2C /* AppDelegate.swift */,
-				EB2CE664232A6E2A002A9A2C /* ViewController.swift */,
 				EB2CE666232A6E2A002A9A2C /* Main.storyboard */,
 				EB2CE669232A6E2B002A9A2C /* Assets.xcassets */,
 				EB2CE66B232A6E2B002A9A2C /* LaunchScreen.storyboard */,
@@ -122,11 +128,20 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		EB2E6D6C23311F2000D1CD8F /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				EB2E6D6D23311F2D00D1CD8F /* Observable.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		EBF817DC232A72010049CBED /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				EBF817DD232A72060049CBED /* data.json */,
 				EB2E6D60232D149900D1CD8F /* ContactModel.swift */,
+				EB2E6D71233134E000D1CD8F /* DynamicValue.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -134,6 +149,8 @@
 		EBF817DE232A72110049CBED /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EB2CE664232A6E2A002A9A2C /* ViewController.swift */,
+				EB2E6D6F2331273D00D1CD8F /* ContactCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -278,11 +295,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB2E6D702331273D00D1CD8F /* ContactCell.swift in Sources */,
 				EB2CE665232A6E2A002A9A2C /* ViewController.swift in Sources */,
 				EB2E6D64232F7A7E00D1CD8F /* Services.swift in Sources */,
 				EB2E6D66232F835000D1CD8F /* ContactViewModel.swift in Sources */,
+				EB2E6D6E23311F2D00D1CD8F /* Observable.swift in Sources */,
 				EB2E6D6A232FB6C000D1CD8F /* SwiftyJSON.swift in Sources */,
 				EB2CE663232A6E2A002A9A2C /* AppDelegate.swift in Sources */,
+				EB2E6D72233134E000D1CD8F /* DynamicValue.swift in Sources */,
 				EB2E6D61232D149900D1CD8F /* ContactModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

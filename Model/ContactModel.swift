@@ -14,17 +14,27 @@ struct ContactModel: Codable {
     var lastName: String?
     var email: String?
     var phone: String?
+    var contactdata : [ContactModel]?
 
-    public init(id: String,
-                firstname: String,
-                lastname: String,
-                email: String,
-                phone: String) {
-
-        self.id = id
-        self.firstName = firstname
-        self.lastName = lastname
-        self.email = email
-        self.phone = phone
+    init() {
+        let mainUrl = Bundle.main.url(forResource: "data", withExtension: ".json")
+        do{
+            let jsonData = try Data(contentsOf: mainUrl!)
+            let decoder = JSONDecoder()
+            contactdata =  try decoder.decode([ContactModel].self, from: jsonData)
+        } catch {}
     }
+//    public init(id: String,
+//                firstname: String,
+//                lastname: String,
+//                email: String,
+//                phone: String) {
+//
+//        self.id = id
+//        self.firstName = firstname
+//        self.lastName = lastname
+//        self.email = email
+//        self.phone = phone
+//    }
 }
+
