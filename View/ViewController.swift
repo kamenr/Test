@@ -10,35 +10,35 @@ import UIKit
 
 class ViewController: UITableViewController{
     
-//    var contacts: ContactViewModel{
-//        didSet{
-//            contacts.id.bindAndFire {
-//                [unowned self] in
-//                self.textbox.text = $0
-//            }
-//            contacts.firstName.bindAndFire {
-//                [unowned self] in
-//                self.textbox.text = $0
-//
-//            }
-//            contacts.lastName.bindAndFire {
-//                [unowned self] in
-//                self.textbox.text = $0
-//
-//            }
-//            contacts.email.bindAndFire {
-//                [unowned self] in
-//                self.textbox.text = $0
-//
-//            }
-//            contacts.phone.bindAndFire {
-//                [unowned self] in
-//                self.textbox.text = $0
-//
-//            }
-//
-//        }
-//    }
+    var contacts: ContactViewModel{
+        didSet{
+            contacts.id.bindAndFire {
+                [unowned self] in
+                self.textbox.text = $0
+            }
+            contacts.firstName.bindAndFire {
+                [unowned self] in
+                self.textbox.text = $0
+
+            }
+            contacts.lastName.bindAndFire {
+                [unowned self] in
+                self.textbox.text = $0
+
+            }
+            contacts.email.bindAndFire {
+                [unowned self] in
+                self.textbox.text = $0
+
+            }
+            contacts.phone.bindAndFire {
+                [unowned self] in
+                self.textbox.text = $0
+
+            }
+
+        }
+    }
     var contactData: ContactViewModel?
     var contactModel: ContactModel?
     override func viewDidLoad() {
