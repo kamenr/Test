@@ -12,12 +12,12 @@ class ContactCell: UITableViewCell {
     
     @IBOutlet weak var contactLabel: UILabel!
     @IBOutlet weak var contactImage: UIImageView!
-   
+    var contactData: ContactModel?
    
     
     
     func setup(name: String) {
-        self.contactLabel.text = name
+        self.contactLabel.text = contactData!.firstName
         self.contactImage.backgroundColor = hexStringToUIColor(hex: "#ff8c00")
     }
     

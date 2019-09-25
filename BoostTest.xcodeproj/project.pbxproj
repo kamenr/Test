@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8BD91734233B659900EAF739 /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD91733233B659900EAF739 /* Converter.swift */; };
+		8BD91736233B65D300EAF739 /* Parceable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD91735233B65D300EAF739 /* Parceable.swift */; };
+		8BD91738233B65F300EAF739 /* ErrorResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD91737233B65F300EAF739 /* ErrorResult.swift */; };
+		8BD9173A233B6A5600EAF739 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD91739233B6A5600EAF739 /* Result.swift */; };
+		8BD9173C233B711700EAF739 /* ContactSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD9173B233B711700EAF739 /* ContactSource.swift */; };
 		EB2CE663232A6E2A002A9A2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2CE662232A6E2A002A9A2C /* AppDelegate.swift */; };
 		EB2CE665232A6E2A002A9A2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2CE664232A6E2A002A9A2C /* ViewController.swift */; };
 		EB2CE668232A6E2A002A9A2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2CE666232A6E2A002A9A2C /* Main.storyboard */; };
@@ -40,6 +45,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8BD91733233B659900EAF739 /* Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
+		8BD91735233B65D300EAF739 /* Parceable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parceable.swift; sourceTree = "<group>"; };
+		8BD91737233B65F300EAF739 /* ErrorResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResult.swift; sourceTree = "<group>"; };
+		8BD91739233B6A5600EAF739 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		8BD9173B233B711700EAF739 /* ContactSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactSource.swift; sourceTree = "<group>"; };
 		EB2CE65F232A6E29002A9A2C /* BoostTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoostTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB2CE662232A6E2A002A9A2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB2CE664232A6E2A002A9A2C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +134,10 @@
 			isa = PBXGroup;
 			children = (
 				EB2E6D63232F7A7E00D1CD8F /* Services.swift */,
+				8BD91733233B659900EAF739 /* Converter.swift */,
+				8BD91735233B65D300EAF739 /* Parceable.swift */,
+				8BD91737233B65F300EAF739 /* ErrorResult.swift */,
+				8BD91739233B6A5600EAF739 /* Result.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -159,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				EB2E6D65232F835000D1CD8F /* ContactViewModel.swift */,
+				8BD9173B233B711700EAF739 /* ContactSource.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -296,14 +311,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB2E6D702331273D00D1CD8F /* ContactCell.swift in Sources */,
+				8BD9173A233B6A5600EAF739 /* Result.swift in Sources */,
 				EB2CE665232A6E2A002A9A2C /* ViewController.swift in Sources */,
+				8BD91736233B65D300EAF739 /* Parceable.swift in Sources */,
 				EB2E6D64232F7A7E00D1CD8F /* Services.swift in Sources */,
 				EB2E6D66232F835000D1CD8F /* ContactViewModel.swift in Sources */,
+				8BD91734233B659900EAF739 /* Converter.swift in Sources */,
+				8BD91738233B65F300EAF739 /* ErrorResult.swift in Sources */,
 				EB2E6D6E23311F2D00D1CD8F /* Observable.swift in Sources */,
 				EB2E6D6A232FB6C000D1CD8F /* SwiftyJSON.swift in Sources */,
 				EB2CE663232A6E2A002A9A2C /* AppDelegate.swift in Sources */,
 				EB2E6D72233134E000D1CD8F /* DynamicValue.swift in Sources */,
 				EB2E6D61232D149900D1CD8F /* ContactModel.swift in Sources */,
+				8BD9173C233B711700EAF739 /* ContactSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
