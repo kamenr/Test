@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8BD91734233B659900EAF739 /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD91733233B659900EAF739 /* Converter.swift */; };
-		8BD91736233B65D300EAF739 /* Parceable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD91735233B65D300EAF739 /* Parceable.swift */; };
-		8BD91738233B65F300EAF739 /* ErrorResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD91737233B65F300EAF739 /* ErrorResult.swift */; };
-		8BD9173A233B6A5600EAF739 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD91739233B6A5600EAF739 /* Result.swift */; };
+		7299FAA8233DF82100BA7C2D /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7299FAA7233DF82100BA7C2D /* SwiftyJSON.swift */; };
+		7299FAAA233E072400BA7C2D /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7299FAA9233E072400BA7C2D /* DetailView.swift */; };
 		8BD9173C233B711700EAF739 /* ContactSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BD9173B233B711700EAF739 /* ContactSource.swift */; };
 		EB2CE663232A6E2A002A9A2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2CE662232A6E2A002A9A2C /* AppDelegate.swift */; };
 		EB2CE665232A6E2A002A9A2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2CE664232A6E2A002A9A2C /* ViewController.swift */; };
@@ -20,7 +18,6 @@
 		EB2E6D61232D149900D1CD8F /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2E6D60232D149900D1CD8F /* ContactModel.swift */; };
 		EB2E6D64232F7A7E00D1CD8F /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2E6D63232F7A7E00D1CD8F /* Services.swift */; };
 		EB2E6D66232F835000D1CD8F /* ContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2E6D65232F835000D1CD8F /* ContactViewModel.swift */; };
-		EB2E6D6A232FB6C000D1CD8F /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2E6D69232FB6C000D1CD8F /* SwiftyJSON.swift */; };
 		EB2E6D6B232FC29C00D1CD8F /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = EBF817DD232A72060049CBED /* data.json */; };
 		EB2E6D6E23311F2D00D1CD8F /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2E6D6D23311F2D00D1CD8F /* Observable.swift */; };
 		EB2E6D702331273D00D1CD8F /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2E6D6F2331273D00D1CD8F /* ContactCell.swift */; };
@@ -45,10 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8BD91733233B659900EAF739 /* Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
-		8BD91735233B65D300EAF739 /* Parceable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parceable.swift; sourceTree = "<group>"; };
-		8BD91737233B65F300EAF739 /* ErrorResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResult.swift; sourceTree = "<group>"; };
-		8BD91739233B6A5600EAF739 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		7299FAA7233DF82100BA7C2D /* SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		7299FAA9233E072400BA7C2D /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		8BD9173B233B711700EAF739 /* ContactSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactSource.swift; sourceTree = "<group>"; };
 		EB2CE65F232A6E29002A9A2C /* BoostTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoostTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB2CE662232A6E2A002A9A2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,7 +57,6 @@
 		EB2E6D60232D149900D1CD8F /* ContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
 		EB2E6D63232F7A7E00D1CD8F /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
 		EB2E6D65232F835000D1CD8F /* ContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewModel.swift; sourceTree = "<group>"; };
-		EB2E6D69232FB6C000D1CD8F /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = "../../Downloads/SwiftyJSON-master/Source/SwiftyJSON/SwiftyJSON.swift"; sourceTree = "<group>"; };
 		EB2E6D6D23311F2D00D1CD8F /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		EB2E6D6F2331273D00D1CD8F /* ContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
 		EB2E6D71233134E000D1CD8F /* DynamicValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DynamicValue.swift; path = BoostTest/DynamicValue.swift; sourceTree = SOURCE_ROOT; };
@@ -97,6 +91,7 @@
 		EB2CE656232A6E29002A9A2C = {
 			isa = PBXGroup;
 			children = (
+				7299FAA7233DF82100BA7C2D /* SwiftyJSON.swift */,
 				EB2E6D6C23311F2000D1CD8F /* Helper */,
 				EB2E6D62232F7A6D00D1CD8F /* Services */,
 				EBF817DF232A72170049CBED /* ViewModel */,
@@ -104,7 +99,6 @@
 				EBF817DC232A72010049CBED /* Model */,
 				EB2CE661232A6E2A002A9A2C /* BoostTest */,
 				EB2CE660232A6E29002A9A2C /* Products */,
-				EB2E6D69232FB6C000D1CD8F /* SwiftyJSON.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,10 +128,6 @@
 			isa = PBXGroup;
 			children = (
 				EB2E6D63232F7A7E00D1CD8F /* Services.swift */,
-				8BD91733233B659900EAF739 /* Converter.swift */,
-				8BD91735233B65D300EAF739 /* Parceable.swift */,
-				8BD91737233B65F300EAF739 /* ErrorResult.swift */,
-				8BD91739233B6A5600EAF739 /* Result.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -165,6 +155,7 @@
 			children = (
 				EB2CE664232A6E2A002A9A2C /* ViewController.swift */,
 				EB2E6D6F2331273D00D1CD8F /* ContactCell.swift */,
+				7299FAA9233E072400BA7C2D /* DetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -311,15 +302,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB2E6D702331273D00D1CD8F /* ContactCell.swift in Sources */,
-				8BD9173A233B6A5600EAF739 /* Result.swift in Sources */,
 				EB2CE665232A6E2A002A9A2C /* ViewController.swift in Sources */,
-				8BD91736233B65D300EAF739 /* Parceable.swift in Sources */,
 				EB2E6D64232F7A7E00D1CD8F /* Services.swift in Sources */,
+				7299FAA8233DF82100BA7C2D /* SwiftyJSON.swift in Sources */,
 				EB2E6D66232F835000D1CD8F /* ContactViewModel.swift in Sources */,
-				8BD91734233B659900EAF739 /* Converter.swift in Sources */,
-				8BD91738233B65F300EAF739 /* ErrorResult.swift in Sources */,
+				7299FAAA233E072400BA7C2D /* DetailView.swift in Sources */,
 				EB2E6D6E23311F2D00D1CD8F /* Observable.swift in Sources */,
-				EB2E6D6A232FB6C000D1CD8F /* SwiftyJSON.swift in Sources */,
 				EB2CE663232A6E2A002A9A2C /* AppDelegate.swift in Sources */,
 				EB2E6D72233134E000D1CD8F /* DynamicValue.swift in Sources */,
 				EB2E6D61232D149900D1CD8F /* ContactModel.swift in Sources */,

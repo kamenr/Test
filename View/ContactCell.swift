@@ -16,8 +16,8 @@ class ContactCell: UITableViewCell {
    
     
     
-    func setup(name: String) {
-        self.contactLabel.text = contactData!.firstName
+    func setup(contact: ContactModel) {
+        self.contactLabel.text = "\(contact.firstName!) " + "\(contact.lastName!)"
         self.contactImage.backgroundColor = hexStringToUIColor(hex: "#ff8c00")
     }
     

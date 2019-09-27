@@ -10,40 +10,14 @@ import UIKit
 
 class ViewController: UITableViewController{
     
-    var contacts: ContactViewModel{
-        didSet{
-            contacts.id.bindAndFire {
-                [unowned self] in
-                self.textbox.text = $0
-            }
-            contacts.firstName.bindAndFire {
-                [unowned self] in
-                self.textbox.text = $0
 
-            }
-            contacts.lastName.bindAndFire {
-                [unowned self] in
-                self.textbox.text = $0
-
-            }
-            contacts.email.bindAndFire {
-                [unowned self] in
-                self.textbox.text = $0
-
-            }
-            contacts.phone.bindAndFire {
-                [unowned self] in
-                self.textbox.text = $0
-
-            }
-
-        }
-    }
-    var contactData: ContactViewModel?
-    var contactModel: ContactModel?
+    var contactData = ContactViewModel()
+    var contactModel: [ContactModel]!
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(contactData!.firstName)
+        contactModel = contactData.loadData()
+        //print(contactModel[0].email!)
+        //self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         self.tableView!.dataSource = self
         self.tableView!.delegate = self
     }
@@ -53,16 +27,24 @@ class ViewController: UITableViewController{
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return contactModel.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        //let contact = contactData[indexPath.row]
+        let contact = contactModel[indexPath.row]
        // print(contact.firstName.value)
         //if let member = contact as? ContactModel
         let cell = tableView.dequeueReusableCell(withIdentifier: "ContactCell", for: indexPath) as! ContactCell
-        //cell.setup(name: contact.firstName.value)
+        cell.setup(contact: contact)
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "DetailView") as! DetailView
+        newViewController.contactDetail = contactModel[indexPath.row]
+        self.present(newViewController, animated: true, completion: nil)
+        
     }
 
 }

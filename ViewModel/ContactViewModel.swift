@@ -9,31 +9,27 @@
 import Foundation
 
 class ContactViewModel {
-    weak var dataSource : GenericDataSource<ContactModel>?
-    let service: Services
-    let contacts: DynamicValue<[ContactModel]>
+//    let service: Services
+//    let contacts: DynamicValue<[ContactModel]>
     
-//    var id: Observable<String>
-//
-//    var firstName: Observable<String>
-//
-//    var lastName: Observable<String>
-//
-//    var email: Observable<String>
-//
-//    var phone: Observable<String>
     
-    init(_ contact: DynamicValue<[ContactModel]>) {
-       
-    }
-//
-//        self.id = Observable(contact.id!)
-//        self.firstName = Observable(contact.firstName!)
-//        self.lastName = Observable(contact.lastName!)
-//        self.email = Observable(contact.email!)
-//        self.phone = Observable(contact.phone!)
-//
+//    init(_ service: Services, _ contact: DynamicValue<[ContactModel]>) {
+//        self.service = service
+//        self.contacts = contact
 //    }
+    
+    
+    public func loadData() -> [ContactModel]{
+        let peoples: [ContactModel]
+        let mainUrl = Bundle.main.url(forResource: "data", withExtension: ".json")
+        do{
+            let jsonData = try Data(contentsOf: mainUrl!)
+            let decoder = JSONDecoder()
+            peoples =  try decoder.decode([ContactModel].self, from: jsonData)
+             return peoples
+         } catch {}
+       return []
+    }
 }
 
 //protocol ContactViewModelProtocol {
