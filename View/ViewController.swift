@@ -10,18 +10,28 @@ import UIKit
 
 class ViewController: UITableViewController{
     
-
     var contactData = ContactViewModel()
     var contactModel: [ContactModel]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(self.reload), for: UIControl.Event.valueChanged)
+        tableView.refreshControl = refreshControl
+        
         contactModel = contactData.loadData()
-        //print(contactModel[0].email!)
-        //self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         self.tableView!.dataSource = self
         self.tableView!.delegate = self
     }
     
+    @objc func reload() {
+        self.tableView.reloadData()
+        self.refreshControl?.endRefreshing()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.tableView.reloadData()
+    }
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -32,8 +42,7 @@ class ViewController: UITableViewController{
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let contact = contactModel[indexPath.row]
-       // print(contact.firstName.value)
-        //if let member = contact as? ContactModel
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "ContactCell", for: indexPath) as! ContactCell
         cell.setup(contact: contact)
         return cell
@@ -42,12 +51,13 @@ class ViewController: UITableViewController{
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let newViewController = storyBoard.instantiateViewController(withIdentifier: "DetailView") as! DetailView
-        newViewController.contactDetail = contactModel[indexPath.row]
+        newViewController.currentIndex = indexPath.row
+        newViewController.contactDetail = contactModel!
         self.present(newViewController, animated: true, completion: nil)
         
     }
-
-}
     
+}
+
 
 
